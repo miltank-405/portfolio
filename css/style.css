@@ -30,6 +30,10 @@ li {
   list-style: none;
 }
 
+:root {
+  --white:#f1f1f1
+}
+
 .pc-only {
   display: block;
 }
@@ -85,9 +89,11 @@ h2::first-letter {
   text-align: center;
   background-image: url("../img/top_haikei.jpg");
   background-size: cover;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   background-blend-mode: lighten;
   background-attachment: fixed;
+  color: var(--white);
+  letter-spacing: 0.7em;
 }
 
 .header-inner {
@@ -102,12 +108,191 @@ h2::first-letter {
   color: #fff;
   text-shadow: 2px 3px 3px rgb(107, 107, 107);
 }
-/* .header-subtitle {
-  font-family: "Amatic SC", cursive;
-  font-size: 30px;
-  line-height: 1;
-  letter-spacing: .08em;
-} */
+/* headerタイトルのアニメーション */
+header div > span {
+  opacity: 0.15;
+}
+
+#k {
+  opacity: 1;
+  animation: flickerI 2s linear reverse infinite;
+}
+
+#k::after {
+  content: '';
+  width: 120%;
+    -webkit-box-shadow: -35px 0 60px 8px rgba(255, 255, 255, 1);
+    -moz-box-shadow: -35px 0 60px 8px rgba(255, 255, 255, 1);
+    box-shadow: -35px 0 60px 8px rgba(255, 255, 255, 1);
+}
+
+#o {
+  animation: flickerLG 2s liner reverse infinite;
+  position: relative;
+}
+
+#o::after,
+#o::before {
+  content: '';
+  width: 80%;
+  height: 100%;
+  background: var(--white);
+  position: absolute;
+  top: 0;
+  left: 15%;
+  border-radius: 90%;
+  opacity: 0.05;
+  filter: blur(10px);
+}
+
+#o::after {
+  width: 120%;
+  height: 150%;
+  top: -10%;
+  left: -5%;
+  opacity: 0.1;
+  filter: blur(10px);
+}
+
+#y {
+  animation: flickerH 2s linear reverse infinite;
+}
+
+@keyframes flickerI {
+  0% {
+		opacity: 0.4;
+	}
+	5% {
+		opacity: 0.5;
+	}
+	10% {
+		opacity: 0.6;
+	}
+	15% {
+		opacity: 0.85;
+	}
+	25% {
+		opacity: 0.5;
+	}
+	30% {
+		opacity: 1;
+	}
+	35% {
+		opacity: 0.1;
+	}
+	40% {
+		opacity: 0.25;
+	}
+	45% {
+		opacity: 0.5;
+	}
+	60% {
+		opacity: 1;
+	}
+	70% {
+		opacity: 0.85;
+	}
+	80% {
+		opacity: 0.4;
+	}
+	90% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes flickerLG {
+	0% {
+		opacity: 0.19;
+	}
+	5% {
+		opacity: 0.2;
+	}
+	10% {
+		opacity: 0.25;
+	}
+	15% {
+		opacity: 0.35;
+	}
+	25% {
+		opacity: 0.2;
+	}
+	30% {
+		opacity: 0.4;
+	}
+	35% {
+		opacity: 0.1;
+	}
+	40% {
+		opacity: 0.25;
+	}
+	45% {
+		opacity: 0.2;
+	}
+	60% {
+		opacity: 0.4;
+	}
+	70% {
+		opacity: 0.35;
+	}
+	80% {
+		opacity: 0.4;
+	}
+	90% {
+		opacity: 0.2;
+	}
+	100% {
+		opacity: 0.4;
+	}
+}
+
+@keyframes flickerH {
+	0% {
+		opacity: 0.15;
+	}
+	5% {
+		opacity: 0.2;
+	}
+	10% {
+		opacity: 0.12;
+	}
+	15% {
+		opacity: 0.2;
+	}
+	25% {
+		opacity: 0.15;
+	}
+	30% {
+		opacity: 0.4;
+	}
+	35% {
+		opacity: 0.05;
+	}
+	40% {
+		opacity: 0.12;
+	}
+	45% {
+		opacity: 0.15;
+	}
+	60% {
+		opacity: 0.3;
+	}
+	70% {
+		opacity: 0.2;
+	}
+	80% {
+		opacity: 0.3;
+	}
+	90% {
+		opacity: 0.18;
+	}
+	100% {
+		opacity: 0.3;
+	}
+}
+
 
 /*--------------------------------
  下層ページのheader
@@ -415,9 +600,6 @@ h2::first-letter {
   .header-title {
     font-size: 40px;
     margin-bottom: 10px;
-  }
-  .header-subtitle {
-    font-size: 18px;
   }
 
   /*  下層ページのheader */
