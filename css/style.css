@@ -389,8 +389,17 @@ header div > span {
   margin-right: 0;
 }
 
+.works-img {
+  width: 100%;
+  line-height: 250px;
+  text-align: center;
+  position: relative;
+}
+
 .works-img img {
   border: 1px solid #e6e6e6;
+  vertical-align: middle;
+  max-height: 250px;
 }
 
 .works-name {
