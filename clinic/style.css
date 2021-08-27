@@ -76,10 +76,10 @@ body {
 
 /* レフト */
 div#left {
-   width: 280px;
-   height: auto;
-   float: left;
-   margin-right: 30px;
+  width: 280px;
+  height: auto;
+  float: left;
+  margin-right: 30px;
 }
 
 div#left ul li {
