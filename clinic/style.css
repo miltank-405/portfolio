@@ -1,5 +1,7 @@
 /* 全体設計 */
 body {
+  height: auto;
+  margin: 0 auto;
   color: #555;
   font-size: 14px;
   line-height: 1;
@@ -9,56 +11,68 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
-/* ラッパー */
-div#wrapper{
-  height: auto;
-  margin: 0 auto;
-}
-
-
 /* ヘッダー */
-header {
+.header {
   width: 960px;
-  height: 99px;
+  height: 50px;
+  width: 90%;
 }
 
-header h1 {
+.header__logo {
   width: 213px;
   height: 39px;
   margin-top: 30px;
+  margin-left: 25px;
   float: left;
 }
 
-nav {
+.header__nav {
   float: right;
-  margin-top: 56px;
+  margin-top: 25px;
 }
 
-nav ul li {
+.header__list {
+  list-style: none;
+}
+
+.header__list,
+.header__list-item {
   float: left;
-  margin-left: 20px;
+  margin-left: 25px;
 }
 
-nav ul li a {
+.header__list-item a {
   color: #555555;
   text-decoration: none;
   font-size: 14px;
   font-weight: bold;
 }
 
-nav ul {
-  list-style: none;
-}
-
-
 /* メイン画像 */
-div#mainimage {
-   width: 960px;
-   height: 300px;
-   margin-bottom: 30px;
+.hero {
+  text-align: center;
+  position: relative;
 }
 
+.hero img {
+  width: 98%;
+  height: 350px;
+  object-fit: cover;
+  margin-bottom: 50px;
+}
+
+.hero p {
+  position: absolute;
+  color: rgb(70, 70, 70);
+  font-size: 1.8em;
+  top: 55%;
+  right: 10%;
+}
+
+.content {
+  background-image: url(clinic/images/background_img.jpg);
+  width: 100%;
+}
 
 /* レフト */
 div#left {

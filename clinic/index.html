@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
   <meta charset="utf-8">
   <title>はなまるこどもクリニック｜その笑顔をいつまでも見たいから</title>
@@ -8,36 +7,44 @@
   <meta name="keywords" content="はなまるこどもクリニック,病院">
   <link rel="stylesheet" href="style.css" type="text/css" media="screen">
 </head>
+<!-- /head -->
 
 <body>
-  <div id="wrapper">
+  <header class="header">
+    <p class="header__logo">
+      <img src="images/logo.png" alt="はなまるこどもクリニック">
+    </p>
+    <nav class="header__nav">
+      <ul class="header__list">
+        <li class="header__list-item">
+          <a href="#">当院について</a>
+        </li>
+        <li class="header__list-item">
+          <a href="#">担当医の紹介</a>
+        </li>
+        <li class="header__list-item">
+          <a href="#">診療設備の紹介</a>
+        </li>
+        <li class="header__list-item">
+          <a href="#">アクセス</a>
+        </li>
+        <div class="clearfix"></div>
+      </ul>
+    </nav>
+    <div class="clearfix"></div>
+  </header>
 
 
-    <header>
-      <h1><img src="images/logo.png" alt="その笑顔をいつまでも見たいから　はなまるこどもクリニック"></h1>
 
 
-      <nav>
-        <ul>
-          <li><a href="#">当院について</a></li>
-          <li><a href="#">担当医の紹介</a></li>
-          <li><a href="#">診療設備の紹介</a></li>
-          <li><a href="#">アクセス</a></li>
-          <div class="clearfix"></div>
-        </ul>
-      </nav>
-      <div class="clearfix"></div>
-    </header>
+  <div class="hero">
+    <img src="images/mainimage.jpeg" alt="メイン画像">
+    <p>その笑顔をいつまでも</p>
+  </div>
 
 
-
-
-    <div id="mainimage">
-      <img src="images/mainimage.jpg" alt="メイン画像">
-    </div>
-
-
-
+<!-- レフトナビ -->
+  <div class="content">
     <div id="left">
       <ul>
         <li><a id="icon_tel" href="#">お電話でのご予約はこちら</a></li>
@@ -45,9 +52,9 @@
         <li><a id="icon_voice" href="#">患者様の声</a></li>
       </ul>
     </div>
+  <!-- /レフトナビ -->
 
-
-
+  <!-- お知らせ -->
     <div id="right">
       <h2>お知らせ</h2>
       <dl>
@@ -65,35 +72,28 @@
       </dl>
     </div>
     <div class="clearfix"></div>
-
-
-
-
-    <footer>
-
-      <div id="footer_inner">
-
-        <p id="pagetop">
-          <a href="#">PAGETOP</a>
-        </p>
-        <p id="footer_logo">
-          <img src="images/logo_footer.png" alt="まごころと優しさを大切に　ネストクリニック">
-        </p>
-
-        <ul>
-          <li><a href="#">当院について</a></li>
-          <li><a href="#">担当医の紹介</a></li>
-          <li><a href="#">診療設備の紹介</a></li>
-          <li><a href="#">アクセス</a></li>
-          <div class="clearfix"></div>
-        </ul>
-        <div class="clearfix"></div>
-      </div>
-    </footer>
-
+  <!-- /お知らせ -->
   </div>
 
-
+<!-- footer -->
+  <footer>
+    <div id="footer_inner">
+      <p id="pagetop">
+        <a href="#">PAGETOP</a>
+      </p>
+      <p id="footer_logo">
+        <img src="images/logo_footer.png" alt="まごころと優しさを大切に　ネストクリニック">
+      </p>
+      <ul>
+        <li><a href="#">当院について</a></li>
+        <li><a href="#">担当医の紹介</a></li>
+        <li><a href="#">診療設備の紹介</a></li>
+        <li><a href="#">アクセス</a></li>
+        <div class="clearfix"></div>
+      </ul>
+      <div class="clearfix"></div>
+    </div>
+  </footer>
+  <!-- /footer -->
 </body>
-
 </html>
