@@ -11,6 +11,7 @@
 
 <!-- body -->
 <body>
+  <!-- .header -->
   <header class="header">
     <p class="header__logo">
       <img src="images/logo.png" alt="はなまるこどもクリニック">
@@ -34,54 +35,75 @@
     </nav>
     <div class="clearfix"></div>
   </header>
-<!-- /header -->
+  <!-- /.header -->
 
-<!-- hero -->
+<!-- .hero -->
   <div class="hero">
-    <img src="images/mainimage.jpeg" alt="メイン画像">
+    <img src="images/mainimage.jpeg" alt="ヒーローイメージ">
   </div>
+<!-- /.hero -->
 
-
-
-  <div id="left">
+<!-- .content(left) -->
+  <div class="content">
     <ul>
-      <li><a id="icon_tel" href="#">お電話でのご予約はこちら</a></li>
-      <li><a id="icon_blog" href="#">院長のブログ</a></li>
-      <li><a id="icon_voice" href="#">患者様の声</a></li>
+      <li class="content__item">
+        <a class="content__icon-tel" href="#">お電話でのご予約はこちら</a>
+      </li>
+      <li class="content__item">
+        <a class="content__icon-blog" href="#">院長のブログ</a>
+      </li>
+      <li class="content__item">
+        <a class="content__icon-voice" href="#">患者様の声</a>
+      </li>
     </ul>
   </div>
+<!-- /.content(left) -->
 
-
-
-  <div id="right">
-    <h2>お知らせ</h2>
+<!-- .info -->
+  <div class="info">
+    <p class="info__tittle">お知らせ</p>
     <dl>
-      <dt>2021.01.01</dt>
-      <dd>新年のご挨拶</dd>
-      <dt>2020.12.20</dt>
-      <dd>年末年始の休診日について</dd>
-      <dt>2020.12.15</dt>
-      <dd>休日救急診療について</dd>
-      <dt>2020.12.10</dt>
-      <dd>学会参加のお知らせ</dd>
-      <dt>2020.12.7</dt>
-      <dd>予防接種のお知らせ</dd>
+      <dt class="info__date">2021.01.01</dt>
+      <dd class="info__update">新年のご挨拶</dd>
+      <dt class="info__date">2020.12.20</dt>
+      <dd class="info__update">年末年始の休診日について</dd>
+      <dt class="info__date">2020.12.15</dt>
+      <dd class="info__update">休日救急診療について</dd>
+      <dt class="info__date">2020.12.10</dt>
+      <dd class="info__update">学会参加のお知らせ</dd>
+      <dt class="info__date">2020.12.7</dt>
+      <dd class="info__update">予防接種のお知らせ</dd>
       <div class="clearfix"></div>
     </dl>
   </div>
   <div class="clearfix"></div>
+  <!-- /.info -->
 
-
-
-<!-- footer -->
-  <footer>
-    <div id="footer_inner">
-      <p id="pagetop">
-        <a href="#">PAGETOP</a>
+<!-- .footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__pageTop">
+        <a href="#">PAGE TOP</a>
       </p>
-      <p id="footer_logo">
+      <p class="footer__logo">
         <img src="images/logo_footer.png" alt="まごころと優しさを大切に　ネストクリニック">
       </p>
+      <ul class="footer__topic">
+        <li class="footer__topic-path">
+          <a href="#">当院について</a>
+        </li>
+        <li class="footer__topic-path">
+          <a href="#">担当医の紹介</a>
+        </li>
+        <li class="footer__topic-path">
+          <a href="#">診療設備の紹介</a>
+        </li>
+        <li class="footer__topic-path">
+          <a href="#">アクセス</a>
+        </li class="footer__topic-path">
+        <div class="clearfix"></div>
+      </ul>
+      <div class="clearfix"></div>
     </div>
   </footer>
   <!-- /footer -->
