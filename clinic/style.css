@@ -1,5 +1,7 @@
 /* 全体設計 */
 body {
+  height: auto;
+  margin: 0 auto;
   color: #555;
   font-size: 14px;
   line-height: 1;
@@ -9,66 +11,81 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
-/* ラッパー */
-div#wrapper{
-  height: auto;
-  margin: 0 auto;
-}
-
-
 /* ヘッダー */
-header {
-  width: 960px;
-  height: 99px;
+.header {
+  height: 50px;
+  width: 90%;
 }
 
-header h1 {
+.header__logo {
   width: 213px;
   height: 39px;
   margin-top: 30px;
+  margin-left: 25px;
   float: left;
 }
 
-nav {
+.header__nav {
   float: right;
-  margin-top: 56px;
+  margin-top: 30px;
 }
 
-nav ul li {
+.header__list {
+  list-style: none;
+}
+
+.header__list,
+.header__list-item {
   float: left;
-  margin-left: 20px;
+  margin-left: 25px;
 }
 
-nav ul li a {
+.header__list-item a {
   color: #555555;
   text-decoration: none;
   font-size: 14px;
   font-weight: bold;
 }
 
-nav ul {
-  list-style: none;
+.header__list-item a:hover {
+  color: #66cdaa;
 }
-
 
 /* メイン画像 */
-div#mainimage {
-   width: 960px;
-   height: 300px;
-   margin-bottom: 30px;
+.hero {
+  text-align: center;
+  position: relative;
 }
 
+.hero img {
+  width: 98%;
+  height: 350px;
+  object-fit: cover;
+  margin-bottom: 50px;
+}
+
+.hero p {
+  position: absolute;
+  color: rgb(70, 70, 70);
+  font-size: 1.8em;
+  top: 55%;
+  right: 10%;
+}
+
+.content {
+  background-image: url(clinic/images/background_img.jpg);
+  width: 100%;
+}
 
 /* レフト */
-div#left {
-   width: 280px;
-   height: auto;
-   float: left;
-   margin-right: 30px;
+.content {
+  width: 280px;
+  height: auto;
+  float: left;
+  margin-right: 30px;
 }
 
-div#left ul li {
+.content__item {
   width: 278px;
   height: 48px;
   background-color: #f0fff0;
@@ -77,7 +94,7 @@ div#left ul li {
   border: 1px solid #66cdaa;
 }
 
-div#left ul li a {
+.content__item a {
   font-size: 16px;
   font-weight: bold;
   color: #555555;
@@ -87,34 +104,34 @@ div#left ul li a {
   display: block;
 }
 
-a#icon_tel {
+.content__icon-tel {
   background: url(images/icon_tel.png) no-repeat 14px center;
 }
 
-a#icon_blog {
+.content__icon-blog {
   background: url(images/icon_blog.png) no-repeat 14px center;
 }
 
-a#icon_voice {
+.content__icon-voice {
   background: url(images/icon_voice.png) no-repeat 14px center;
 }
 
 /* ライト */
-div#right {
-  width: 650px;
+.info {
+  width: 50%;
   height: auto;
   float: left;
-  margin-left: 30px;
+  margin-left: 10%;
 }
 
-div#right h2 {
-  font-size: 18px;
+.info__tittle {
+  font-size: 20px;
   font-weight: bold;
   color: #555555;
   margin-bottom: 15px;
 }
 
-div#right dt {
+.info__date {
   font-size: 12px;
   color: #a8a8a8;
   float: left;
@@ -123,40 +140,39 @@ div#right dt {
   padding-left: 15px;
 }
 
-div#right dd {
+.info__update {
   font-size: 13px;
   color: #555555;
-  margin: left;
+  padding-left: 25%;
   width: 556px;
   line-height: 40px;
 }
 
-div#right dt:nth-of-type(odd) ,
-div#right dd:nth-of-type(odd) {
+.info__date:nth-of-type(odd) ,
+.info__update:nth-of-type(odd) {
   background-color: #f5f5f5;
 }
 
-div.clearfix {
+.clearfix {
   clear: both;
 }
 
 /* フッター */
-
-footer {
+.footer {
   width: 100%;
-  height: auto;
+  height: 90px;
   background-color: #66cdaa;
   margin-top: 50px;
 }
 
-div#footer_inner {
+.footer__inner {
   width: 960px;
   margin: 0 auto;
   position: relative;
   padding: 20px 0;
 }
 
-p#pagetop a {
+.footer__pageTop a {
   width: 78px;
   height: 20px;
   background-color: #66cdaa;
@@ -170,22 +186,25 @@ p#pagetop a {
   right: 0;
 }
 
-p#footer_logo {
+.footer__logo {
   float: left;
+  position: absolute;
+  top: 15px;
 }
 
-footer ul {
+.footer__topic {
   float: right;
-  margin-top: 24px;
+  position: relative;
+  top: -5px;
 }
 
-footer ul li {
+.footer__topic-path {
   float: left;
   margin-left: 20px;
   list-style: none;
 }
 
-footer ul li a {
+.footer__topic-path a {
   color: white;
   font-size: 14px;
   font-weight: bold;
