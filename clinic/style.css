@@ -64,11 +64,11 @@ body {
   margin-bottom: 50px;
 }
 
-.hero p {
+.hero__text {
   position: absolute;
   color: rgb(70, 70, 70);
   font-size: 1.8em;
-  top: 55%;
+  top: 53%;
   right: 10%;
 }
 
