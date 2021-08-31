@@ -45,6 +45,7 @@ body {
   text-decoration: none;
   font-size: 14px;
   font-weight: bold;
+  padding: 15px;
 }
 
 .header__list-item a:hover {
@@ -64,11 +65,11 @@ body {
   margin-bottom: 50px;
 }
 
-.hero p {
+.hero__text {
   position: absolute;
   color: rgb(70, 70, 70);
   font-size: 1.8em;
-  top: 55%;
+  top: 53%;
   right: 10%;
 }
 
@@ -184,6 +185,7 @@ body {
   position: absolute;
   top: -20px;
   right: 0;
+  padding: 5px;
 }
 
 .footer__logo {
