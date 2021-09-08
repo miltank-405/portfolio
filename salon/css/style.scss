@@ -591,34 +591,7 @@ footer {
 /* ====================
 	メディアクエリ
 ====================*/
-// @mixin pc {
-// 	@media (min-width: ($pc)) {
-// 		@content;
-// 	}
-// }
-// @mixin sp {
-// 	@media (max-width: ($sp)) {
-// 		@content;
-// 	}
-// }
-// ＠includeを書いて上を適用
-// .body img{
-// 	@include pc {
-// 		width: 350px;
-// 		height: auto;
-// 	};
-// 	@include sp {
-// 		width: 100%;
-// 		height: auto;
-// 	};
-// }
-/* pc表示の時のヘッダーはスマホメニュー出さない */
-// ハンバーガー表示されちゃうからcssにして消してみる
-	// .pc-nav {
-	// 	@include sp {
-	// 		display: none;
-	// 	}
-	// }
+
 
 
 // @media screen and (min-width: 640px){
