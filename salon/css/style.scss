@@ -584,12 +584,16 @@ footer {
 変数の指定
 ==================== */
 // ブレイクポイント
-$sp: 640px
+$sp: 640px;
 
 /* ====================
 	メディアクエリ
 ====================*/
-
+@mixin mobile {
+	@media screen and (max-width: $sp) {
+		@content;
+	}
+}
 
 
 // @media screen and (min-width: 640px){
