@@ -619,229 +619,231 @@ footer {
 	// 		display: none;
 	// 	}
 	// }
-@media screen and (min-width: 640px){
-	// スマホ用ヘッダー非表示
-	.sp-nav {
-		display: none;
-	}
-	// スマホ用Googleカレンダー非表示
-	.sp_google_cal {
-		display: none;
-	}
-}
-
-@media screen and (max-width: 640px) {
-	// PC用ヘッダー非表示
-	// .pc-nav {
-	// 	display: none;
-	// }
 
 
-/* ====================
-スマホ用ヘッダーの指定 
-==================== */
-/* スマホ用メニュー（ハンバーガー実装） */
-	.menu-ul li a {
-		color: #fff !important;
-	}
-	.sp-nav {
-		// スマホ表示の時はヘッダーでPCメニュー出さない
+// @media screen and (min-width: 640px){
+// 	// スマホ用ヘッダー非表示
+// 	.sp-nav {
+// 		display: none;
+// 	}
+// 	// スマホ用Googleカレンダー非表示
+// 	.sp_google_cal {
+// 		display: none;
+// 	}
+// }
+
+// @media screen and (max-width: 640px) {
+// 	// PC用ヘッダー非表示
+// 	// .pc-nav {
+// 	// 	display: none;
+// 	// }
+
+
+// /* ====================
+// スマホ用ヘッダーの指定 
+// ==================== */
+// /* スマホ用メニュー（ハンバーガー実装） */
+// 	.menu-ul li a {
+// 		color: #fff !important;
+// 	}
+// 	.sp-nav {
+// 		// スマホ表示の時はヘッダーでPCメニュー出さない
 		
-		// @include pc {
-		// 	display: none;
-		// }
+// 		// @include pc {
+// 		// 	display: none;
+// 		// }
 
 
-		// スマホ用 三 のスタイル
-		// ▼前面表示にしたいからz-indexは1を指定
-		z-index: 1;
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		// ▼全画面表示にしたいから100vhに指定
-		height: 100vh;
-		display: block;
-		background: rgba(0, 0, 0, 0.8);
-		// ▼三と閉じるを押した時に表示・非表示のアニメーション
-		transition: all .2s ease-in-out;
-		// スマホメニューを一回非表示
-		opacity: 0;
-		transform: translateY(-100%);
+// 		// スマホ用 三 のスタイル
+// 		// ▼前面表示にしたいからz-indexは1を指定
+// 		z-index: 1;
+// 		position: fixed;
+// 		top: 0;
+// 		left: 0;
+// 		width: 100%;
+// 		// ▼全画面表示にしたいから100vhに指定
+// 		height: 100vh;
+// 		display: block;
+// 		background: rgba(0, 0, 0, 0.8);
+// 		// ▼三と閉じるを押した時に表示・非表示のアニメーション
+// 		transition: all .2s ease-in-out;
+// 		// スマホメニューを一回非表示
+// 		opacity: 0;
+// 		transform: translateY(-100%);
 
-		// リストの指定
-		ul {
-			padding: 0;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			height: 100%;
-			li {
-				margin: 0;
-				padding: 0;
-				span {
-					font-size: 15px;
-					color: #fff;
-					display: block;
-					padding: 20px 0;
-				}
-				a {
-					display: block;
-					padding: 30px 0;
-				}
-			}
-			// ▼閉じるボタンの装飾
-			// 基準のli要素
-			.close {
-				position: relative;
-				padding-left: 20px;
-				padding-bottom: 40px;
-				// Xの` 1こめ
-				&::before {
-					content: "";
-					position: absolute;
-					top: 68%;
-					left: 38%;
-					display: block;
-					width: 16px;
-					height: 1px;
-					background: #fff;
-					transform: rotate(45deg);
-				}
-				// Xの/ 2こめ
-				&::after {
-					content: "";
-					position: absolute;
-					top: 41%;
-					left: -9%;
-					display: block;
-					width: 16px;
-					height: 1px;
-					background: #fff;
-					transform: rotate(-45deg);
-				}
-			}
-		}
-	}
-	/* ====================
-		ハンバーガーの線
-	==================== */
-	#hamburger {
-		position: relative;
-		display: block;
-		width: 30px;
-		height: 25px;
-		margin: 0 0 0 auto;
-		// ハンバーガーの真ん中
-		span {
-			position: absolute;
-			top: 50%;
-			left: 0;
-			display: block;
-			width: 100%;
-			height: 2px;
-			background-color: #333;
-			transform: translateY(-50%);
-		}
-		// ハンバーガーの上
-		&::before {
-			content: "";
-			display: block;
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 2px;
-			background-color: #333;
-		}
-		// ハンバーガーの下
-		&::after {
-			content: "";
-			display: block;
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			width: 70%;
-			height: 2px;
-			background-color: #333;
-		}
-	}
+// 		// リストの指定
+// 		ul {
+// 			padding: 0;
+// 			display: flex;
+// 			flex-direction: column;
+// 			justify-content: center;
+// 			align-items: center;
+// 			height: 100%;
+// 			li {
+// 				margin: 0;
+// 				padding: 0;
+// 				span {
+// 					font-size: 15px;
+// 					color: #fff;
+// 					display: block;
+// 					padding: 20px 0;
+// 				}
+// 				a {
+// 					display: block;
+// 					padding: 30px 0;
+// 				}
+// 			}
+// 			// ▼閉じるボタンの装飾
+// 			// 基準のli要素
+// 			.close {
+// 				position: relative;
+// 				padding-left: 20px;
+// 				padding-bottom: 40px;
+// 				// Xの` 1こめ
+// 				&::before {
+// 					content: "";
+// 					position: absolute;
+// 					top: 68%;
+// 					left: 38%;
+// 					display: block;
+// 					width: 16px;
+// 					height: 1px;
+// 					background: #fff;
+// 					transform: rotate(45deg);
+// 				}
+// 				// Xの/ 2こめ
+// 				&::after {
+// 					content: "";
+// 					position: absolute;
+// 					top: 41%;
+// 					left: -9%;
+// 					display: block;
+// 					width: 16px;
+// 					height: 1px;
+// 					background: #fff;
+// 					transform: rotate(-45deg);
+// 				}
+// 			}
+// 		}
+// 	}
+// 	/* ====================
+// 		ハンバーガーの線
+// 	==================== */
+// 	#hamburger {
+// 		position: relative;
+// 		display: block;
+// 		width: 30px;
+// 		height: 25px;
+// 		margin: 0 0 0 auto;
+// 		// ハンバーガーの真ん中
+// 		span {
+// 			position: absolute;
+// 			top: 50%;
+// 			left: 0;
+// 			display: block;
+// 			width: 100%;
+// 			height: 2px;
+// 			background-color: #333;
+// 			transform: translateY(-50%);
+// 		}
+// 		// ハンバーガーの上
+// 		&::before {
+// 			content: "";
+// 			display: block;
+// 			position: absolute;
+// 			top: 0;
+// 			left: 0;
+// 			width: 100%;
+// 			height: 2px;
+// 			background-color: #333;
+// 		}
+// 		// ハンバーガーの下
+// 		&::after {
+// 			content: "";
+// 			display: block;
+// 			position: absolute;
+// 			bottom: 0;
+// 			left: 0;
+// 			width: 70%;
+// 			height: 2px;
+// 			background-color: #333;
+// 		}
+// 	}
 
-	/* ====================
-		toggleClass
-	====================*/
-	.toggle {
-		transform: translateY(0);
-		opacity: 1;
-	}
+// 	/* ====================
+// 		toggleClass
+// 	====================*/
+// 	.toggle {
+// 		transform: translateY(0);
+// 		opacity: 1;
+// 	}
 
-	/* ====================
-		About
-	==================== */
-	.about_salon {
-		display: block !important;
-		img {
-			width: 100%;
-			margin: 5% 10%;
-		}
-		.salon_info {
-			width: 100%;
-			margin: 0 auto;
-			padding: 5% 10%;
-		}
-	}
-	// PC用カレンダー非表示
-	.google_cal {
-		display: none !important;
-	}
-	.sp_google_cal {
-		margin: 0 auto;
-		padding: 0;
-	}
+// 	/* ====================
+// 		About
+// 	==================== */
+// 	.about_salon {
+// 		display: block !important;
+// 		img {
+// 			width: 100%;
+// 			margin: 5% 10%;
+// 		}
+// 		.salon_info {
+// 			width: 100%;
+// 			margin: 0 auto;
+// 			padding: 5% 10%;
+// 		}
+// 	}
+// 	// PC用カレンダー非表示
+// 	.google_cal {
+// 		display: none !important;
+// 	}
+// 	.sp_google_cal {
+// 		margin: 0 auto;
+// 		padding: 0;
+// 	}
 
-	/* ====================
-		Stylist
-	==================== */
-	.stylist_profile {
-		display: block !important;
-		text-align: center;
-		h4 {
-			font-size: 20px;
-			padding: 10% 0;
-		}
-	}
-	/* ====================
-		Salon info
-	==================== */
-	.address {
-		width: 100%;
-		display: block;
-		padding: 10px 12%;
-		h3 {
-			display: none;
-		}
-		p {
-			line-height: 1.8rem;
-		}
-	}
+// 	/* ====================
+// 		Stylist
+// 	==================== */
+// 	.stylist_profile {
+// 		display: block !important;
+// 		text-align: center;
+// 		h4 {
+// 			font-size: 20px;
+// 			padding: 10% 0;
+// 		}
+// 	}
+// 	/* ====================
+// 		Salon info
+// 	==================== */
+// 	.address {
+// 		width: 100%;
+// 		display: block;
+// 		padding: 10px 12%;
+// 		h3 {
+// 			display: none;
+// 		}
+// 		p {
+// 			line-height: 1.8rem;
+// 		}
+// 	}
 
-	/* ====================
-		TOPに戻るボタン
-	==================== */
-	#page_top {
-		margin-right: 10px;
-	}
+// 	/* ====================
+// 		TOPに戻るボタン
+// 	==================== */
+// 	#page_top {
+// 		margin-right: 10px;
+// 	}
 
-	/* ====================
-		Footer
-	==================== */
-	footer {
-		height: 100px;
-		p {
-			margin-top: 20px;
-		}
+// 	/* ====================
+// 		Footer
+// 	==================== */
+// 	footer {
+// 		height: 100px;
+// 		p {
+// 			margin-top: 20px;
+// 		}
 		
-	}
-}
-/* ==========▲▲▲ ここまでレスポンシブ用 ▲▲▲========== */
+// 	}
+// }
+// /* ==========▲▲▲ ここまでレスポンシブ用 ▲▲▲========== */
