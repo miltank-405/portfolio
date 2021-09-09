@@ -906,6 +906,16 @@ footer p {
 /* ====================
 	Stylist
 ==================== */
+.stylist_profile {
+  display: block !important;
+  text-align: center;
+}
+
+.stylist_profile h4 {
+  font-size: 20px;
+  padding: 10% 0;
+}
+
 /* ====================
 	Salon info
 ==================== */
