@@ -793,20 +793,21 @@ $sp: 640px;
 		padding: 10% 0;
 	}
 }
+
 /* ====================
 	Salon info
 ==================== */
-// 	.address {
-// 		width: 100%;
-// 		display: block;
-// 		padding: 10px 12%;
-// 		h3 {
-// 			display: none;
-// 		}
-// 		p {
-// 			line-height: 1.8rem;
-// 		}
-// 	}
+.address {
+	width: 100%;
+	display: block;
+	padding: 10px 12%;
+	h3 {
+		display: none;
+	}
+	p {
+		line-height: 1.8rem;
+	}
+}
 
 /* ====================
 	TOPに戻るボタン

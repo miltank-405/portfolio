@@ -919,6 +919,20 @@ footer p {
 /* ====================
 	Salon info
 ==================== */
+.address {
+  width: 100%;
+  display: block;
+  padding: 10px 12%;
+}
+
+.address h3 {
+  display: none;
+}
+
+.address p {
+  line-height: 1.8rem;
+}
+
 /* ====================
 	TOPに戻るボタン
 ==================== */
