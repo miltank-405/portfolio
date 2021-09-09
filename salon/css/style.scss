@@ -590,8 +590,14 @@ $sp: 640px;
 /* ====================
 	メディアクエリ
 ====================*/
-@mixin mobile {
-	@media screen and (max-width: $sp) {
+@mixin pc {
+	@media screen and (max-width: ($pc)) {
+		@content;
+	}
+}
+
+@mixin sp {
+	@media screen and (max-width: ($sp)) {
 		@content;
 	}
 }
