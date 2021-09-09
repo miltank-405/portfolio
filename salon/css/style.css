@@ -727,6 +727,22 @@ footer p {
 	スマホ用ヘッダーの指定 
 ==================== */
 /* スマホ用メニュー（ハンバーガー実装） */
+.sp-nav {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: block;
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  opacity: 0;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
 @media screen and (min-width: 641px) {
   .sp-nav {
     display: none;
@@ -737,9 +753,124 @@ footer p {
   color: #fff !important;
 }
 
+.sp-nav ul {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.sp-nav ul li {
+  margin: 0;
+  padding: 0;
+}
+
+.sp-nav ul li span {
+  font-size: 15px;
+  color: #fff;
+  display: block;
+  padding: 20px 0;
+}
+
+.sp-nav ul li a {
+  display: block;
+  padding: 30px 0;
+}
+
+.sp-nav ul .close {
+  position: relative;
+  padding-left: 20px;
+  padding-bottom: 40px;
+}
+
+.sp-nav ul .close::before {
+  content: "";
+  position: absolute;
+  top: 68%;
+  left: 38%;
+  display: block;
+  width: 16px;
+  height: 1px;
+  background: #fff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.sp-nav ul .close::after {
+  content: "";
+  position: absolute;
+  top: 41%;
+  left: -9%;
+  display: block;
+  width: 16px;
+  height: 1px;
+  background: #fff;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
 /* ====================
 	ハンバーガーの線
 ==================== */
+#hamburger {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 25px;
+  margin: 0 0 0 auto;
+}
+
+@media screen and (min-width: 641px) {
+  #hamburger {
+    display: none;
+  }
+}
+
+#hamburger span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#hamburger::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #333;
+}
+
+#hamburger::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 70%;
+  height: 2px;
+  background-color: #333;
+}
+
 /* ====================
 	toggleClass
 ====================*/
