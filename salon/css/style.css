@@ -713,4 +713,13 @@ footer p {
     display: none;
   }
 }
+
+/* ====================
+	Googleカレンダー表示・非表示
+====================*/
+@media screen and (min-width: 641px) {
+  .sp_google_cal {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */
