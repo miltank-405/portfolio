@@ -624,7 +624,11 @@ $sp: 640px;
 		display: none;
 	}
 }
-
+.google_cal {
+	@include sp {
+		display: none;
+	}
+}
 
 
 // /* ====================

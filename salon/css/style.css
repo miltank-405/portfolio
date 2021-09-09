@@ -722,4 +722,10 @@ footer p {
     display: none;
   }
 }
+
+@media screen and (max-width: 640px) {
+  .google_cal {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */
