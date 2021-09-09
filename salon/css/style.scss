@@ -584,25 +584,31 @@ footer {
 変数の指定
 ==================== */
 // ブレイクポイント
-$pc: 1024px;
+$pc: 641px;
 $sp: 640px;
 
 /* ====================
 	メディアクエリ
 ====================*/
 @mixin pc {
-	@media screen and (max-width: ($pc)) {
+	@media screen and (min-width: ($pc)) {
 		@content;
 	}
 }
-
 @mixin sp {
 	@media screen and (max-width: ($sp)) {
 		@content;
 	}
 }
 
-
+/* ====================
+	pc / sp それぞれメニュー非表示
+====================*/
+.sp-nav {
+	@include pc {
+		display: none;
+	}
+}
 // @media screen and (min-width: 640px){
 // 	// スマホ用ヘッダー非表示
 // 	.sp-nav {

@@ -699,4 +699,12 @@ footer p {
 /* ====================
 	メディアクエリ
 ====================*/
+/* ====================
+	pc / sp それぞれメニュー非表示
+====================*/
+@media screen and (min-width: 641px) {
+  .sp-nav {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */
