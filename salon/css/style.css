@@ -943,4 +943,13 @@ footer p {
 /* ====================
 	Footer
 ==================== */
+footer {
+  height: 100px;
+}
+
+footer p {
+  margin-top: 20px;
+}
+
+/* ==========▲▲▲ ここまでレスポンシブ用 ▲▲▲========== */
 /*# sourceMappingURL=style.css.map */
