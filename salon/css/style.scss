@@ -807,6 +807,9 @@ $sp: 640px;
 	Salon info
 ==================== */
 .address {
+	@include pc {
+		display: none;
+	}
 	width: 100%;
 	display: block;
 	padding: 10px 12%;
