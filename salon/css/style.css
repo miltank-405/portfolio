@@ -711,6 +711,11 @@ footer p {
 /* ====================
 	Googleカレンダー表示・非表示
 ====================*/
+.sp_google_cal {
+  margin: 0 auto;
+  padding: 0;
+}
+
 @media screen and (min-width: 641px) {
   .sp_google_cal {
     display: none;
@@ -883,6 +888,21 @@ footer p {
 /* ====================
 	About
 ==================== */
+.about_salon {
+  display: block !important;
+}
+
+.about_salon img {
+  width: 100%;
+  margin: 5% 10%;
+}
+
+.about_salon .salon_info {
+  width: 100%;
+  margin: 0 auto;
+  padding: 5% 10%;
+}
+
 /* ====================
 	Stylist
 ==================== */

@@ -617,6 +617,8 @@ $sp: 640px;
 	@include pc {
 		display: none;
 	}
+	margin: 0 auto;
+	padding: 0;
 }
 .google_cal {
 	@include sp {
@@ -767,26 +769,18 @@ $sp: 640px;
 /* ====================
 	About
 ==================== */
-// 	.about_salon {
-// 		display: block !important;
-// 		img {
-// 			width: 100%;
-// 			margin: 5% 10%;
-// 		}
-// 		.salon_info {
-// 			width: 100%;
-// 			margin: 0 auto;
-// 			padding: 5% 10%;
-// 		}
-// 	}
-// 	// PC用カレンダー非表示
-// 	.google_cal {
-// 		display: none !important;
-// 	}
-// 	.sp_google_cal {
-// 		margin: 0 auto;
-// 		padding: 0;
-// 	}
+.about_salon {
+	display: block !important;
+	img {
+		width: 100%;
+		margin: 5% 10%;
+	}
+	.salon_info {
+		width: 100%;
+		margin: 0 auto;
+		padding: 5% 10%;
+	}
+}
 
 /* ====================
 	Stylist
