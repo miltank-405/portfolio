@@ -762,6 +762,9 @@ $sp: 640px;
 	toggleClass
 ====================*/
 .toggle {
+	@include pc {
+		display: none;
+	}
 	transform: translateY(0);
 	opacity: 1;
 }
@@ -770,6 +773,9 @@ $sp: 640px;
 	About
 ==================== */
 .about_salon {
+	@include pc {
+		display: none;
+	}
 	display: block !important;
 	img {
 		width: 100%;
@@ -786,6 +792,9 @@ $sp: 640px;
 	Stylist
 ==================== */
 .stylist_profile {
+	@include pc {
+		display: none;
+	}
 	display: block !important;
 	text-align: center;
 	h4 {

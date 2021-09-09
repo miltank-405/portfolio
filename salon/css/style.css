@@ -885,11 +885,23 @@ footer p {
   opacity: 1;
 }
 
+@media screen and (min-width: 641px) {
+  .toggle {
+    display: none;
+  }
+}
+
 /* ====================
 	About
 ==================== */
 .about_salon {
   display: block !important;
+}
+
+@media screen and (min-width: 641px) {
+  .about_salon {
+    display: none;
+  }
 }
 
 .about_salon img {
@@ -909,6 +921,12 @@ footer p {
 .stylist_profile {
   display: block !important;
   text-align: center;
+}
+
+@media screen and (min-width: 641px) {
+  .stylist_profile {
+    display: none;
+  }
 }
 
 .stylist_profile h4 {
