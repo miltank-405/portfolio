@@ -602,13 +602,8 @@ $sp: 640px;
 }
 
 /* ====================
-	pc / sp それぞれメニュー非表示
+	pcメニューのときスマホメニュー非表示
 ====================*/
-.sp-nav {
-	@include pc {
-		display: none;
-	}
-}
 .pc-nav {
 	@include sp {
 		display: none;
@@ -633,16 +628,14 @@ $sp: 640px;
 	スマホ用ヘッダーの指定 
 ==================== */
 /* スマホ用メニュー（ハンバーガー実装） */
-// 	.menu-ul li a {
-// 		color: #fff !important;
-// 	}
-// 	.sp-nav {
-// 		// スマホ表示の時はヘッダーでPCメニュー出さない
-		
-// 		// @include pc {
-// 		// 	display: none;
-// 		// }
-
+.sp-nav {
+	@include pc {
+		display: none;
+	}
+	.menu-ul li a {
+		color: #fff !important;
+	}	
+}
 
 // 		// スマホ用 三 のスタイル
 // 		// ▼前面表示にしたいからz-indexは1を指定

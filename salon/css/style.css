@@ -700,14 +700,8 @@ footer p {
 	メディアクエリ
 ====================*/
 /* ====================
-	pc / sp それぞれメニュー非表示
+	pcメニューのときスマホメニュー非表示
 ====================*/
-@media screen and (min-width: 641px) {
-  .sp-nav {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 640px) {
   .pc-nav {
     display: none;
@@ -733,6 +727,16 @@ footer p {
 	スマホ用ヘッダーの指定 
 ==================== */
 /* スマホ用メニュー（ハンバーガー実装） */
+@media screen and (min-width: 641px) {
+  .sp-nav {
+    display: none;
+  }
+}
+
+.sp-nav .menu-ul li a {
+  color: #fff !important;
+}
+
 /* ====================
 	ハンバーガーの線
 ==================== */
