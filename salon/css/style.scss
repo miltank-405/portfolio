@@ -598,38 +598,6 @@ footer {
 
 
 /* ==========▼▼▼ ここからレスポンシブ用 ▼▼▼========== */
-
-/* ====================
-	メディアクエリ
-====================*/
-// @mixin pc {
-// 	@media (min-width: ($pc)) {
-// 		@content;
-// 	}
-// }
-// @mixin sp {
-// 	@media (max-width: ($sp)) {
-// 		@content;
-// 	}
-// }
-// ＠includeを書いて上を適用
-// .body img{
-// 	@include pc {
-// 		width: 350px;
-// 		height: auto;
-// 	};
-// 	@include sp {
-// 		width: 100%;
-// 		height: auto;
-// 	};
-// }
-/* pc表示の時のヘッダーはスマホメニュー出さない */
-// ハンバーガー表示されちゃうからcssにして消してみる
-	// .pc-nav {
-	// 	@include sp {
-	// 		display: none;
-	// 	}
-	// }
 @include pc {
 	// スマホ用ヘッダー非表示
 	.sp-nav {
@@ -650,13 +618,6 @@ footer {
 		color: #fff !important;
 	}
 	.sp-nav {
-		// スマホ表示の時はヘッダーでPCメニュー出さない
-		
-		// @include pc {
-		// 	display: none;
-		// }
-
-
 		// スマホ用 三 のスタイル
 		// ▼前面表示にしたいからz-indexは1を指定
 		z-index: 1;
