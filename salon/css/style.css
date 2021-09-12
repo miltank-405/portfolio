@@ -39,6 +39,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: end;
@@ -53,6 +56,7 @@ header {
   top: 0;
   left: 0;
   z-index: 2;
+  box-sizing: border-box;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: #fff;
@@ -85,6 +89,7 @@ header nav .menu-ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: flex-end;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -109,6 +114,8 @@ header nav .menu-ul li::after {
   width: 80%;
   height: 2px;
   background: #333;
+  transform: scale(0, 1);
+  transform-origin: center top;
   -webkit-transform: scale(0, 1);
           transform: scale(0, 1);
   -webkit-transform-origin: center top;
@@ -121,6 +128,7 @@ header nav .menu-ul li::after {
 }
 
 header nav .menu-ul li:hover::after {
+  transform: scale(1, 1);
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
 }
@@ -150,6 +158,7 @@ header nav .menu-ul li:hover::after {
   display: inline-block;
   left: 50%;
   margin-right: -50%;
+  transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
@@ -202,6 +211,7 @@ header nav .menu-ul li:hover::after {
   display: inline-block;
   left: 50%;
   margin-right: -50%;
+  transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
@@ -276,6 +286,7 @@ header nav .menu-ul li:hover::after {
   padding-right: 15%;
   margin-top: 250px;
   margin-bottom: 80px;
+  box-sizing: border-box;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -288,6 +299,7 @@ header nav .menu-ul li:hover::after {
   display: inline-block;
   left: 50%;
   margin-right: -50%;
+  transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
@@ -314,6 +326,7 @@ header nav .menu-ul li:hover::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: space-between;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -372,6 +385,7 @@ header nav .menu-ul li:hover::after {
   display: inline-block;
   left: 50%;
   margin-right: -50%;
+  transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
@@ -426,6 +440,7 @@ header nav .menu-ul li:hover::after {
   padding-right: 15%;
   margin-top: 250px;
   margin-bottom: 80px;
+  box-sizing: border-box;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -438,6 +453,7 @@ header nav .menu-ul li:hover::after {
   display: inline-block;
   left: 50%;
   margin-right: -50%;
+  transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
@@ -479,6 +495,8 @@ header nav .menu-ul li:hover::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: center;
+  align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -497,12 +515,14 @@ header nav .menu-ul li:hover::after {
 
 .reservation .btn_reserv section .line::before {
   margin-right: 18px;
+  transform: rotate(-35deg);
   -webkit-transform: rotate(-35deg);
           transform: rotate(-35deg);
 }
 
 .reservation .btn_reserv section .line::after {
   margin-left: 18px;
+  transform: rotate(35deg);
   -webkit-transform: rotate(35deg);
           transform: rotate(35deg);
 }
@@ -517,6 +537,8 @@ header nav .menu-ul li:hover::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: center;
+  align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -525,6 +547,7 @@ header nav .menu-ul li:hover::after {
           align-items: center;
   width: 98%;
   height: 50px;
+  box-sizing: border-box;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: #fff;
@@ -534,6 +557,7 @@ header nav .menu-ul li:hover::after {
 .reservation a.btn:hover span {
   left: 0;
   top: 0;
+  box-shadow: 0 0 4px #CAD4E2, -2px -2px 4px #fff;
   -webkit-box-shadow: 0 0 4px #CAD4E2, -2px -2px 4px #fff;
           box-shadow: 0 0 4px #CAD4E2, -2px -2px 4px #fff;
 }
@@ -542,6 +566,8 @@ header nav .menu-ul li:hover::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: center;
+  align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -551,17 +577,20 @@ header nav .menu-ul li:hover::after {
   width: 98%;
   height: 50px;
   background: #fff;
+  box-sizing: border-box;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #4d4d4d;
   font-size: 15px;
   letter-spacing: 0.1em;
+  box-shadow: 0px 5px 12px #CAD4E2, -6px -6px 12px #fff;
   -webkit-box-shadow: 0px 5px 12px #CAD4E2, -6px -6px 12px #fff;
           box-shadow: 0px 5px 12px #CAD4E2, -6px -6px 12px #fff;
   border-radius: 10px;
   position: absolute;
   top: -5px;
   left: 0;
+  transition-duration: 0.2s;
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
 }
@@ -582,6 +611,7 @@ header nav .menu-ul li:hover::after {
   height: 180px;
   margin-top: 50px;
   margin-bottom: 80px;
+  box-sizing: border-box;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -620,6 +650,7 @@ header nav .menu-ul li:hover::after {
   position: absolute;
   top: 100%;
   left: 50%;
+  transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   content: "";
@@ -688,9 +719,11 @@ footer p {
   letter-spacing: 0.05em;
   position: absolute;
   top: 50%;
+  transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   left: 50%;
+  transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
@@ -725,6 +758,7 @@ footer p {
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     opacity: 0;
+    transform: translateY(-100%);
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%);
   }
@@ -733,6 +767,9 @@ footer p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -773,6 +810,7 @@ footer p {
     width: 16px;
     height: 1px;
     background: #fff;
+    transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg);
   }
@@ -785,6 +823,7 @@ footer p {
     width: 16px;
     height: 1px;
     background: #fff;
+    transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
   }
@@ -806,6 +845,7 @@ footer p {
     width: 100%;
     height: 2px;
     background-color: #333;
+    transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
@@ -833,6 +873,7 @@ footer p {
 		toggleClass
 	====================*/
   .toggle {
+    transform: translateY(0);
     -webkit-transform: translateY(0);
             transform: translateY(0);
     opacity: 1;
